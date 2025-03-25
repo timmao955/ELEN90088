@@ -4,7 +4,7 @@ import cvxpy as cp
 # Define parameters
 T = 3
 a = 1.5
-α = 2
+alpha = 2
 
 def compute_c_function(T):
     # Define variables
@@ -18,7 +18,7 @@ def compute_c_function(T):
         constraints.append(x[t] == a * x[t-1] + u[t-1])  # Add new constraints to constraints
 
     # Define the cost function
-    c = cp.sum_squares(x) + α*cp.sum_squares(u)
+    c = cp.sum_squares(x) + alpha*cp.sum_squares(u)
 
     return c, u, constraints  # Return function, control variable, and constraints
 
