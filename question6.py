@@ -147,10 +147,10 @@ def gradient_decs_7(n):
     return float(x1), float(x2), float(f2)
 
 if __name__ == "__main__":
-    print(gradient_decs_1(1000))
-    print(gradient_decs_2(1000))
-    print(gradient_decs_3(1000))
-    print(gradient_decs_4(1000))
-    print(gradient_decs_5(1000))
-    print(gradient_decs_6(1000))
-    print(gradient_decs_7(1000))
+    print(f"Constant step size (func_1): {gradient_decs_1(1000)}")
+    print(f"Constant step size (func_2): {gradient_decs_2(1000)}")
+    print(f"Vanishing step size (func_1): {gradient_decs_3(1000)}")
+    print(f"Vanishing step size (func_2): {gradient_decs_4(1000)}")
+    print(f"Backtracking line search (func_1): {gradient_decs_5(1000)}")
+    print(f"Backtracking line search (func_2): {gradient_decs_6(1000)}")
+    print(f"Exact line search (func_1): {gradient_decs_7(1000)}")
