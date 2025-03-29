@@ -63,7 +63,7 @@ if __name__ == "__main__":
     P_max = 5
     sigma = 0.2
     # S_min = 0
-    S_min = [0.1, 0.2, 0.5, 1.0, 2.0, 10.0]
+    S_min = [0.1, 0.2, 0.23, 0.24, 0.5, 1.0]
 
     # P_opt, SINR = obj_fun()
     # plot_graph(P_opt, SINR)
